@@ -32,8 +32,9 @@ class Block {
     }
 
     static blockHash(block) {
-        const { timestamp, lastHash, data } = block;
-        return Block.hash(timestamp, lastHash, data);
+        const { timeStamp, lastHash, data } = block;
+        // console.log(timeStamp + "    " + lastHash + "    " + data);
+        return Block.hash(timeStamp, lastHash, data);
     }
 }
 
