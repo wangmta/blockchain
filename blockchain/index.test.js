@@ -1,7 +1,7 @@
 // each test case will not interfere with one another
 // variables will not be changed cross test case
 
-const Blockchain = require('./blockchain');
+const Blockchain = require('./index');
 const Block = require('./block');
 
 describe('Blockchain', () => {

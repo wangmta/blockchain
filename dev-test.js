@@ -1,5 +1,5 @@
-const Block = require('./block');
-const Blockchain = require('./blockchain');
+const Block = require('./blockchain/block');
+const Blockchain = require('./blockchain/index');
 // const block = new Block('time', 'lasthash', 'hash', 'data');
 // console.log(block.toString());
 // console.log(Block.genesis().toString());
