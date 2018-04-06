@@ -7,8 +7,14 @@ const Blockchain = require('./blockchain/index');
 // const fooBlock = Block.mineBlock(Block.genesis(), 'foo');
 // console.log(fooBlock.toString());
 
+// const bc = new Blockchain();
+// const bc2 = new Blockchain();
+// bc2.addBlock('foo');
+// console.log(bc2.chain);
+// console.log(bc.isValidChain(bc2.chain));
+
 const bc = new Blockchain();
-const bc2 = new Blockchain();
-bc2.addBlock('foo');
-console.log(bc2.chain);
-console.log(bc.isValidChain(bc2.chain));
+
+for(let i=0; i<10; i++) {
+    console.log(bc.addBlock(`foo-${i}`).toString());
+}
